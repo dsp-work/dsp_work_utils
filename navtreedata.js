@@ -33,7 +33,11 @@ var NAVTREE =
       ] ]
     ] ],
     [ "ファイル", "files.html", [
-      [ "ファイル一覧", "files.html", "files_dup" ]
+      [ "ファイル一覧", "files.html", "files_dup" ],
+      [ "ファイルメンバ", "globals.html", [
+        [ "全て", "globals.html", null ],
+        [ "関数", "globals_func.html", null ]
+      ] ]
     ] ]
   ] ]
 ];

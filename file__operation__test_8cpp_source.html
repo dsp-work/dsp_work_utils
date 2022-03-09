@@ -85,7 +85,7 @@ $(document).ready(function(){initNavTree('file__operation__test_8cpp_source.html
   <div class="headertitle"><div class="title">file_operation_test.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<a href="file__operation__test_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;file_operation&quot;</span></div>
@@ -99,15 +99,15 @@ $(document).ready(function(){initNavTree('file__operation__test_8cpp_source.html
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">using namespace </span>std;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacedsp__work__utils.html">dsp_work_utils</a>;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keywordtype">void</span> run_fileopen();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keywordtype">void</span> <a class="code hl_function" href="file__operation__test_8cpp.html#a1c8a469db0f833bb9044a0b7c6f774f4">run_fileopen</a>();</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keywordtype">int</span> main( <span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>** argv )</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="file__operation__test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">   19</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="file__operation__test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>( <span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>** argv )</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    vector&lt; string &gt; args( argv, argv + argc );</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">if</span> ( args.at( 1 ) == <span class="keywordtype">string</span>( <span class="stringliteral">&quot;fileopen&quot;</span> ) )</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        run_fileopen();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <a class="code hl_function" href="file__operation__test_8cpp.html#a1c8a469db0f833bb9044a0b7c6f774f4">run_fileopen</a>();</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    {</div>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('file__operation__test_8cpp_source.html
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keywordtype">void</span> run_fileopen()</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="file__operation__test_8cpp.html#a1c8a469db0f833bb9044a0b7c6f774f4">   36</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="file__operation__test_8cpp.html#a1c8a469db0f833bb9044a0b7c6f774f4">run_fileopen</a>()</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>{</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="comment">// resd test</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    FILE* fp = <a class="code hl_function" href="namespacedsp__work__utils.html#aaaaeca371ee94cd56af157158c1fa4b6">fileopen</a>( <span class="keywordtype">string</span>( <span class="stringliteral">&quot;./test_data.txt&quot;</span> ), <span class="charliteral">&#39;r&#39;</span>, __FILE__, __LINE__ );</div>
@@ -130,14 +130,16 @@ $(document).ready(function(){initNavTree('file__operation__test_8cpp_source.html
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    fp = <a class="code hl_function" href="namespacedsp__work__utils.html#aaaaeca371ee94cd56af157158c1fa4b6">fileopen</a>( <span class="keywordtype">string</span>( <span class="stringliteral">&quot;./test_data_.txt&quot;</span> ), <span class="charliteral">&#39;r&#39;</span>, __FILE__, __LINE__ );</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    fclose( fp );</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
-<div class="ttc" id="anamespacedsp__work__utils_html"><div class="ttname"><a href="namespacedsp__work__utils.html">dsp_work_utils</a></div><div class="ttdoc">dsp_work_utils</div><div class="ttdef"><b>Definition:</b> <a href="directory__operation_8hpp_source.html#l00019">directory_operation.hpp:20</a></div></div>
+<div class="ttc" id="afile__operation__test_8cpp_html_a1c8a469db0f833bb9044a0b7c6f774f4"><div class="ttname"><a href="file__operation__test_8cpp.html#a1c8a469db0f833bb9044a0b7c6f774f4">run_fileopen</a></div><div class="ttdeci">void run_fileopen()</div><div class="ttdef"><b>Definition:</b> <a href="file__operation__test_8cpp_source.html#l00036">file_operation_test.cpp:36</a></div></div>
+<div class="ttc" id="afile__operation__test_8cpp_html_a3c04138a5bfe5d72780bb7e82a18e627"><div class="ttname"><a href="file__operation__test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a></div><div class="ttdeci">int main(int argc, char **argv)</div><div class="ttdef"><b>Definition:</b> <a href="file__operation__test_8cpp_source.html#l00019">file_operation_test.cpp:19</a></div></div>
+<div class="ttc" id="anamespacedsp__work__utils_html"><div class="ttname"><a href="namespacedsp__work__utils.html">dsp_work_utils</a></div><div class="ttdef"><b>Definition:</b> <a href="directory__operation_8hpp_source.html#l00019">directory_operation.hpp:20</a></div></div>
 <div class="ttc" id="anamespacedsp__work__utils_html_aaaaeca371ee94cd56af157158c1fa4b6"><div class="ttname"><a href="namespacedsp__work__utils.html#aaaaeca371ee94cd56af157158c1fa4b6">dsp_work_utils::fileopen</a></div><div class="ttdeci">FILE * fileopen(const std::string &amp;filename, const char mode, const std::string &amp;call_file, const int call_line)</div><div class="ttdoc">指定のモードでファイルを開く。正しくファイルを開けたかのチェック機構付き</div><div class="ttdef"><b>Definition:</b> <a href="file__operation_8hpp_source.html#l00025">file_operation.hpp:25</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_13e138d54eb8818da29c3992edef070a.html">test</a></li><li class="navelem"><a class="el" href="dir_43253cacbf7029b9ae3a8d05a78bb50e.html">file_operation</a></li><li class="navelem"><b>file_operation_test.cpp</b></li>
+    <li class="navelem"><a class="el" href="dir_13e138d54eb8818da29c3992edef070a.html">test</a></li><li class="navelem"><a class="el" href="dir_43253cacbf7029b9ae3a8d05a78bb50e.html">file_operation</a></li><li class="navelem"><a class="el" href="file__operation__test_8cpp.html">file_operation_test.cpp</a></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>
