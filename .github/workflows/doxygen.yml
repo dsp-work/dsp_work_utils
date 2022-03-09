@@ -19,7 +19,7 @@ jobs:
       - uses: mattnotmitt/doxygen-action@1.9.3
         with:
           # Path to Doxyfile
-          doxyfile-path: ./.doxygen/Doxyfile # default is ./Doxyfile
+          doxyfile-path: ./.doxygen/Doxyfile_jp # default is ./Doxyfile
           # Working directory
           #working-directory: './docs/_doxygen' # default is .
           # Generate latex documentation

@@ -19,7 +19,6 @@
 namespace dsp_work_utils
 {
     ///
-    /// @fn inline bool Exist_directory( std::string dir_name )
     /// @brief クロスプラットフォームなフォルダ存在確認関数
     /// @param[in] dir_name 作成するフォルダのパス
     /// @return bool 存在しているか、true : 存在、false : 存在なし
@@ -49,15 +48,19 @@ namespace dsp_work_utils
     ///
     inline void make_directory( std::string dir_name )
     {
-        if ( !exist_directory( dir_name ) )
+        if ( !exist_directory( dir_name.c_str() ) )
         {
+#if defined( _WIN32 )
             if ( mkdir( dir_name.c_str() ) == 0 )
+#else
+            if ( mkdir( dir_name.c_str(), 0777 ) == 0 )
+#endif
             {
-                printf( "ディレクトリ%sを作成しました。\n", dir_name.c_str() );
+                printf( "create directory '%s'\n", dir_name.c_str() );
             }
             else
             {
-                printf( "ディレクトリ%sを作成できませんでした。\n", dir_name.c_str() );
+                printf( "can't create directory '%s'\n", dir_name.c_str() );
                 exit( -1 );
             }
         }
