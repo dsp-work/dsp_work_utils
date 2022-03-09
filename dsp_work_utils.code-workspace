@@ -1,0 +1,100 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"C_Cpp.default.includePath": [
+			"./utils"
+		],
+		"C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+		"windows": {
+			"cmake.generator": "MinGW Makefiles"
+		},
+		"cmake.configureArgs": [
+			"-DDEVELOP_EXECUTABLE_dsp_work_utils=ON"
+		],
+		"editor.defaultFormatter": "xaver.clang-format",
+		"editor.formatOnPaste": true,
+		"editor.formatOnSave": true,
+		"extensions.ignoreRecommendations": false,
+		"C_Cpp.clang_format_fallbackStyle": "WebKit",
+		"clang-format.fallbackStyle": "WebKit",
+		"files.associations": {
+			"algorithm": "cpp",
+			"atomic": "cpp",
+			"bit": "cpp",
+			"cctype": "cpp",
+			"charconv": "cpp",
+			"chrono": "cpp",
+			"clocale": "cpp",
+			"cmath": "cpp",
+			"compare": "cpp",
+			"concepts": "cpp",
+			"cstddef": "cpp",
+			"cstdint": "cpp",
+			"cstdio": "cpp",
+			"cstdlib": "cpp",
+			"cstring": "cpp",
+			"ctime": "cpp",
+			"cwchar": "cpp",
+			"exception": "cpp",
+			"format": "cpp",
+			"forward_list": "cpp",
+			"initializer_list": "cpp",
+			"iomanip": "cpp",
+			"ios": "cpp",
+			"iosfwd": "cpp",
+			"istream": "cpp",
+			"iterator": "cpp",
+			"limits": "cpp",
+			"locale": "cpp",
+			"map": "cpp",
+			"memory": "cpp",
+			"new": "cpp",
+			"optional": "cpp",
+			"ostream": "cpp",
+			"ratio": "cpp",
+			"sstream": "cpp",
+			"stdexcept": "cpp",
+			"streambuf": "cpp",
+			"string": "cpp",
+			"system_error": "cpp",
+			"tuple": "cpp",
+			"type_traits": "cpp",
+			"typeinfo": "cpp",
+			"utility": "cpp",
+			"vector": "cpp",
+			"xfacet": "cpp",
+			"xiosbase": "cpp",
+			"xlocale": "cpp",
+			"xlocbuf": "cpp",
+			"xlocinfo": "cpp",
+			"xlocmes": "cpp",
+			"xlocmon": "cpp",
+			"xlocnum": "cpp",
+			"xloctime": "cpp",
+			"xmemory": "cpp",
+			"xstddef": "cpp",
+			"xstring": "cpp",
+			"xtr1common": "cpp",
+			"xtree": "cpp",
+			"xutility": "cpp",
+			"file_operation": "cpp"
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"xaver.clang-format",
+			"ms-vscode.cpptools",
+			"ms-vscode.cpptools-themes",
+			"twxs.cmake",
+			"ms-vscode.cmake-tools",
+			"cschlosser.doxdocgen",
+			"jeff-hykin.better-cpp-syntax",
+			"vadimcn.vscode-lldb",
+			"ms-ceintl.vscode-language-pack-ja"
+		]
+	}
+}

@@ -1,3 +1,20 @@
+# build directory
+Debug
+Release
+build
+
+# build item
+*.a
+*.o
+*.exe
+*.png
+
+# using development
+develop_main.cpp
+
+# necessary for telling cmake setting(e.g. include dir)
+!*.code-workspace
+
 # Prerequisites
 *.d
 
@@ -30,3 +47,4 @@
 *.exe
 *.out
 *.app
+
