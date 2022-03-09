@@ -25,6 +25,13 @@
 var NAVTREE =
 [
   [ "dsp_work_utils", "index.html", [
+    [ "名前空間", "namespaces.html", [
+      [ "名前空間一覧", "namespaces.html", "namespaces_dup" ],
+      [ "名前空間メンバ", "namespacemembers.html", [
+        [ "全て", "namespacemembers.html", null ],
+        [ "関数", "namespacemembers_func.html", null ]
+      ] ]
+    ] ],
     [ "ファイル", "files.html", [
       [ "ファイル一覧", "files.html", "files_dup" ]
     ] ]

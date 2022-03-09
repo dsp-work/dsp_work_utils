@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('file__operation__test_8cpp_source.html
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">using namespace </span>std;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">using namespace </span>dsp_work_utils;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacedsp__work__utils.html">dsp_work_utils</a>;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keywordtype">void</span> run_fileopen();</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
@@ -121,15 +121,17 @@ $(document).ready(function(){initNavTree('file__operation__test_8cpp_source.html
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keywordtype">void</span> run_fileopen()</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>{</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="comment">// resd test</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    FILE* fp = fileopen( <span class="keywordtype">string</span>( <span class="stringliteral">&quot;./test_data.txt&quot;</span> ), <span class="charliteral">&#39;r&#39;</span>, __FILE__, __LINE__ );</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    FILE* fp = <a class="code hl_function" href="namespacedsp__work__utils.html#aaaaeca371ee94cd56af157158c1fa4b6">fileopen</a>( <span class="keywordtype">string</span>( <span class="stringliteral">&quot;./test_data.txt&quot;</span> ), <span class="charliteral">&#39;r&#39;</span>, __FILE__, __LINE__ );</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    fclose( fp );</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">// write test(create files)</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    fp = fileopen( <span class="keywordtype">string</span>( <span class="stringliteral">&quot;./test_data_.txt&quot;</span> ), <span class="charliteral">&#39;w&#39;</span>, __FILE__, __LINE__ );</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    fp = <a class="code hl_function" href="namespacedsp__work__utils.html#aaaaeca371ee94cd56af157158c1fa4b6">fileopen</a>( <span class="keywordtype">string</span>( <span class="stringliteral">&quot;./test_data_.txt&quot;</span> ), <span class="charliteral">&#39;w&#39;</span>, __FILE__, __LINE__ );</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    fclose( fp );</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    fp = fileopen( <span class="keywordtype">string</span>( <span class="stringliteral">&quot;./test_data_.txt&quot;</span> ), <span class="charliteral">&#39;r&#39;</span>, __FILE__, __LINE__ );</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    fp = <a class="code hl_function" href="namespacedsp__work__utils.html#aaaaeca371ee94cd56af157158c1fa4b6">fileopen</a>( <span class="keywordtype">string</span>( <span class="stringliteral">&quot;./test_data_.txt&quot;</span> ), <span class="charliteral">&#39;r&#39;</span>, __FILE__, __LINE__ );</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    fclose( fp );</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
+<div class="ttc" id="anamespacedsp__work__utils_html"><div class="ttname"><a href="namespacedsp__work__utils.html">dsp_work_utils</a></div><div class="ttdoc">dsp_work_utils</div><div class="ttdef"><b>Definition:</b> <a href="directory__operation_8hpp_source.html#l00019">directory_operation.hpp:20</a></div></div>
+<div class="ttc" id="anamespacedsp__work__utils_html_aaaaeca371ee94cd56af157158c1fa4b6"><div class="ttname"><a href="namespacedsp__work__utils.html#aaaaeca371ee94cd56af157158c1fa4b6">dsp_work_utils::fileopen</a></div><div class="ttdeci">FILE * fileopen(const std::string &amp;filename, const char mode, const std::string &amp;call_file, const int call_line)</div><div class="ttdoc">指定のモードでファイルを開く。正しくファイルを開けたかのチェック機構付き</div><div class="ttdef"><b>Definition:</b> <a href="file__operation_8hpp_source.html#l00025">file_operation.hpp:25</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

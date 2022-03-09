@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('string__operation__test_8cpp_source.ht
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">using namespace </span>std;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">using namespace </span>dsp_work_utils;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacedsp__work__utils.html">dsp_work_utils</a>;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keywordtype">void</span> test_format();</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keywordtype">void</span> test_split_char();</div>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('string__operation__test_8cpp_source.ht
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    printf( <span class="stringliteral">&quot;%2.2fの二乗は%2.2fです。&quot;</span>, a, ans );</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">auto</span> str_result = format( <span class="stringliteral">&quot;%2.2fの二乗は%2.2fです。&quot;</span>, a, ans );</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">auto</span> str_result = <a class="code hl_function" href="namespacedsp__work__utils.html#ac199c45aadd15d34198387079224c348">format</a>( <span class="stringliteral">&quot;%2.2fの二乗は%2.2fです。&quot;</span>, a, ans );</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    assert( <span class="keywordtype">string</span>( <span class="stringliteral">&quot;3.00の二乗は9.00です。&quot;</span> ) == str_result );</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('string__operation__test_8cpp_source.ht
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>{</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="comment">// separator = &#39;,&#39;</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">string</span> base_str1( <span class="stringliteral">&quot;No,test,try,success,fail&quot;</span> );</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">auto</span> split_str1 = split_char( base_str1, <span class="charliteral">&#39;,&#39;</span> );</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">auto</span> split_str1 = <a class="code hl_function" href="namespacedsp__work__utils.html#a455a029e9f0cee85ff0c432e14151271">split_char</a>( base_str1, <span class="charliteral">&#39;,&#39;</span> );</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    assert( 5 == split_str1.size() );</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    assert( <span class="keywordtype">string</span>( <span class="stringliteral">&quot;No&quot;</span> ) == split_str1.at( 0 ) );</div>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('string__operation__test_8cpp_source.ht
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="comment">// separator = &#39;:&#39;</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">string</span> base_str2( <span class="stringliteral">&quot;bird:cat:dog:dolphin:sheep:giraf:pig&quot;</span> );</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">auto</span> split_str2 = split_char( base_str2, <span class="charliteral">&#39;:&#39;</span> );</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">auto</span> split_str2 = <a class="code hl_function" href="namespacedsp__work__utils.html#a455a029e9f0cee85ff0c432e14151271">split_char</a>( base_str2, <span class="charliteral">&#39;:&#39;</span> );</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    assert( 7 == split_str2.size() );</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    assert( <span class="keywordtype">string</span>( <span class="stringliteral">&quot;bird&quot;</span> ) == split_str2.at( 0 ) );</div>
@@ -160,6 +160,9 @@ $(document).ready(function(){initNavTree('string__operation__test_8cpp_source.ht
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    assert( <span class="keywordtype">string</span>( <span class="stringliteral">&quot;giraf&quot;</span> ) == split_str2.at( 5 ) );</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    assert( <span class="keywordtype">string</span>( <span class="stringliteral">&quot;pig&quot;</span> ) == split_str2.at( 6 ) );</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
+<div class="ttc" id="anamespacedsp__work__utils_html"><div class="ttname"><a href="namespacedsp__work__utils.html">dsp_work_utils</a></div><div class="ttdoc">dsp_work_utils</div><div class="ttdef"><b>Definition:</b> <a href="directory__operation_8hpp_source.html#l00019">directory_operation.hpp:20</a></div></div>
+<div class="ttc" id="anamespacedsp__work__utils_html_a455a029e9f0cee85ff0c432e14151271"><div class="ttname"><a href="namespacedsp__work__utils.html#a455a029e9f0cee85ff0c432e14151271">dsp_work_utils::split_char</a></div><div class="ttdeci">std::vector&lt; std::string &gt; split_char(std::string &amp;str, char spliter)</div><div class="ttdoc">区切り文字によって文字列を分割する関数</div><div class="ttdef"><b>Definition:</b> <a href="string__operation_8hpp_source.html#l00042">string_operation.hpp:42</a></div></div>
+<div class="ttc" id="anamespacedsp__work__utils_html_ac199c45aadd15d34198387079224c348"><div class="ttname"><a href="namespacedsp__work__utils.html#ac199c45aadd15d34198387079224c348">dsp_work_utils::format</a></div><div class="ttdeci">std::string format(const std::string &amp;fmt, Args... args)</div><div class="ttdoc">printfと同じ用法で、stringに出力する関数</div><div class="ttdef"><b>Definition:</b> <a href="string__operation_8hpp_source.html#l00025">string_operation.hpp:25</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

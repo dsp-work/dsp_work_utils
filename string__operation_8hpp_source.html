@@ -94,10 +94,10 @@ $(document).ready(function(){initNavTree('string__operation_8hpp_source.html',''
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span>dsp_work_utils</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedsp__work__utils.html">dsp_work_utils</a></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">template</span>&lt; <span class="keyword">typename</span>... Args &gt;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    std::string format( <span class="keyword">const</span> std::string&amp; fmt, Args... args )</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="namespacedsp__work__utils.html#ac199c45aadd15d34198387079224c348">   25</a></span>    std::string <a class="code hl_function" href="namespacedsp__work__utils.html#ac199c45aadd15d34198387079224c348">format</a>( <span class="keyword">const</span> std::string&amp; fmt, Args... args )</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    {</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        std::size_t len = <span class="keyword">static_cast&lt;</span> std::size_t <span class="keyword">&gt;</span>(</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            snprintf( <span class="keyword">nullptr</span>, 0, fmt.c_str(), args... ) );</div>
@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('string__operation_8hpp_source.html',''
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordflow">return</span> std::string( &amp;buf[0], &amp;buf[0] + len );</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    }</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">inline</span> std::vector&lt; std::string &gt; split_char( std::string&amp; str, <span class="keywordtype">char</span> spliter )</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="namespacedsp__work__utils.html#a455a029e9f0cee85ff0c432e14151271">   42</a></span>    <span class="keyword">inline</span> std::vector&lt; std::string &gt; <a class="code hl_function" href="namespacedsp__work__utils.html#a455a029e9f0cee85ff0c432e14151271">split_char</a>( std::string&amp; str, <span class="keywordtype">char</span> spliter )</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    {</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        std::stringstream ss { str };</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        std::vector&lt; std::string &gt; strs;</div>
@@ -119,6 +119,9 @@ $(document).ready(function(){initNavTree('string__operation_8hpp_source.html',''
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}    <span class="comment">// namespace dsp_work_utils</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#endif </span><span class="comment">/* DSPWORK_STRING_OPERATION_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="anamespacedsp__work__utils_html"><div class="ttname"><a href="namespacedsp__work__utils.html">dsp_work_utils</a></div><div class="ttdoc">dsp_work_utils</div><div class="ttdef"><b>Definition:</b> <a href="directory__operation_8hpp_source.html#l00019">directory_operation.hpp:20</a></div></div>
+<div class="ttc" id="anamespacedsp__work__utils_html_a455a029e9f0cee85ff0c432e14151271"><div class="ttname"><a href="namespacedsp__work__utils.html#a455a029e9f0cee85ff0c432e14151271">dsp_work_utils::split_char</a></div><div class="ttdeci">std::vector&lt; std::string &gt; split_char(std::string &amp;str, char spliter)</div><div class="ttdoc">区切り文字によって文字列を分割する関数</div><div class="ttdef"><b>Definition:</b> <a href="string__operation_8hpp_source.html#l00042">string_operation.hpp:42</a></div></div>
+<div class="ttc" id="anamespacedsp__work__utils_html_ac199c45aadd15d34198387079224c348"><div class="ttname"><a href="namespacedsp__work__utils.html#ac199c45aadd15d34198387079224c348">dsp_work_utils::format</a></div><div class="ttdeci">std::string format(const std::string &amp;fmt, Args... args)</div><div class="ttdoc">printfと同じ用法で、stringに出力する関数</div><div class="ttdef"><b>Definition:</b> <a href="string__operation_8hpp_source.html#l00025">string_operation.hpp:25</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

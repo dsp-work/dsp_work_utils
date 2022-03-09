@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('math__operation__test_8cpp_source.html
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">using namespace </span>std;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">using namespace </span>dsp_work_utils;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacedsp__work__utils.html">dsp_work_utils</a>;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keywordtype">void</span> test_pow2();</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
@@ -126,8 +126,10 @@ $(document).ready(function(){initNavTree('math__operation__test_8cpp_source.html
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">double</span> ans = 9.0;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> acc = 1000;    <span class="comment">// 10^-n(小数点以下n桁)まで精度を検査</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    assert( <span class="keyword">static_cast&lt;</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> <span class="keyword">&gt;</span>( std::round( ans * acc ) ) == <span class="keyword">static_cast&lt;</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> <span class="keyword">&gt;</span>( std::round( pow2( a ) * acc ) ) );</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    assert( <span class="keyword">static_cast&lt;</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> <span class="keyword">&gt;</span>( std::round( ans * acc ) ) == <span class="keyword">static_cast&lt;</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> <span class="keyword">&gt;</span>( std::round( <a class="code hl_function" href="namespacedsp__work__utils.html#abaabc035d45d45f8cd704fc7e8d4cfb8">pow2</a>( a ) * acc ) ) );</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
+<div class="ttc" id="anamespacedsp__work__utils_html"><div class="ttname"><a href="namespacedsp__work__utils.html">dsp_work_utils</a></div><div class="ttdoc">dsp_work_utils</div><div class="ttdef"><b>Definition:</b> <a href="directory__operation_8hpp_source.html#l00019">directory_operation.hpp:20</a></div></div>
+<div class="ttc" id="anamespacedsp__work__utils_html_abaabc035d45d45f8cd704fc7e8d4cfb8"><div class="ttname"><a href="namespacedsp__work__utils.html#abaabc035d45d45f8cd704fc7e8d4cfb8">dsp_work_utils::pow2</a></div><div class="ttdeci">double pow2(double num)</div><div class="ttdoc">２乗値を高速に計算する関数</div><div class="ttdef"><b>Definition:</b> <a href="math__operation_8hpp_source.html#l00019">math_operation.hpp:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
