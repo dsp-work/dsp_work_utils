@@ -18,7 +18,7 @@ namespace dsp_work_utils
     /// @brief 指定のモードでファイルを開く。正しくファイルを開けたかのチェック機構付き
     /// @param[in] filename 開くファイルのパス
     /// @param[in] mode fopenと同じ用法
-    /// @return std::string 変数値などを埋め込んだ整形済み文字列
+    /// @return FILE* 開いたファイルのポインタ
     /// @details 開くファイルのパスは絶対パスや実行ファイルからの相対パスで指定する。
     ///
     inline FILE* fileopen(
@@ -42,11 +42,11 @@ namespace dsp_work_utils
     ///
     /// @brief ファイルの大きさをバイト単位で返却
     /// @param[in] filename 調べるファイルのパス
-    /// @return std::size_t 変数値などを埋め込んだ整形済み文字列
+    /// @return std::size_t バイト単位のファイルの大きさ
     /// @details 開くファイルのパスは絶対パスや実行ファイルからの相対パスで指定する。<br>
     /// ファイルが見つからない場合、エラー終了する。
     ///
-    std::size_t file_size( std::string& file_name )
+    inline std::size_t file_size( std::string& file_name )
     {
         FILE* fp = NULL;
         fp = fopen( file_name.c_str(), "rb" );
