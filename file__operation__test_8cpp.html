@@ -88,6 +88,7 @@ $(document).ready(function(){initNavTree('file__operation__test_8cpp.html',''); 
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;file_operation&quot;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;cstdio&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
@@ -97,12 +98,13 @@ file_operation_test.cpp の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="file__operation__test_8cpp__incl.png" border="0" usemap="#atest_2file__operation_2file__operation__test_8cpp" alt=""/></div>
 <map name="atest_2file__operation_2file__operation__test_8cpp" id="atest_2file__operation_2file__operation__test_8cpp">
-<area shape="rect" title=" " alt="" coords="163,5,317,47"/>
+<area shape="rect" title=" " alt="" coords="211,5,365,47"/>
 <area shape="rect" title=" " alt="" coords="5,95,104,121"/>
-<area shape="rect" title=" " alt="" coords="129,95,186,121"/>
-<area shape="rect" title=" " alt="" coords="210,95,270,121"/>
-<area shape="rect" title=" " alt="" coords="294,95,349,121"/>
-<area shape="rect" title=" " alt="" coords="373,95,432,121"/>
+<area shape="rect" title=" " alt="" coords="129,95,194,121"/>
+<area shape="rect" title=" " alt="" coords="218,95,275,121"/>
+<area shape="rect" title=" " alt="" coords="299,95,359,121"/>
+<area shape="rect" title=" " alt="" coords="383,95,438,121"/>
+<area shape="rect" title=" " alt="" coords="463,95,521,121"/>
 </map>
 </div>
 </div>
@@ -112,6 +114,8 @@ file_operation_test.cpp の依存先関係図:</div>
 関数</h2></td></tr>
 <tr class="memitem:a1c8a469db0f833bb9044a0b7c6f774f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__operation__test_8cpp.html#a1c8a469db0f833bb9044a0b7c6f774f4">run_fileopen</a> ()</td></tr>
 <tr class="separator:a1c8a469db0f833bb9044a0b7c6f774f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f8cf9f5c3f16e97008c80176d553aa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__operation__test_8cpp.html#a9f8cf9f5c3f16e97008c80176d553aa4">test_file_size</a> ()</td></tr>
+<tr class="separator:a9f8cf9f5c3f16e97008c80176d553aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file__operation__test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -142,15 +146,17 @@ file_operation_test.cpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="file__operation__test_8cpp_source.html">file_operation_test.cpp</a> の <a class="el" href="file__operation__test_8cpp_source.html#l00019">19</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="file__operation__test_8cpp_source.html">file_operation_test.cpp</a> の <a class="el" href="file__operation__test_8cpp_source.html#l00021">21</a> 行目に定義があります。</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="file__operation__test_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.png" border="0" usemap="#afile__operation__test_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph" alt=""/></div>
 <map name="afile__operation__test_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph" id="afile__operation__test_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,56,32"/>
-<area shape="rect" href="file__operation__test_8cpp.html#a1c8a469db0f833bb9044a0b7c6f774f4" title=" " alt="" coords="104,5,195,32"/>
-<area shape="rect" href="namespacedsp__work__utils.html#aaaaeca371ee94cd56af157158c1fa4b6" title="指定のモードでファイルを開く。正しくファイルを開けたかのチェック機構付き" alt="" coords="243,5,401,32"/>
+<area shape="rect" title=" " alt="" coords="5,31,56,57"/>
+<area shape="rect" href="file__operation__test_8cpp.html#a1c8a469db0f833bb9044a0b7c6f774f4" title=" " alt="" coords="107,5,198,32"/>
+<area shape="rect" href="file__operation__test_8cpp.html#a9f8cf9f5c3f16e97008c80176d553aa4" title=" " alt="" coords="104,56,201,83"/>
+<area shape="rect" href="namespacedsp__work__utils.html#aaaaeca371ee94cd56af157158c1fa4b6" title="指定のモードでファイルを開く。正しくファイルを開けたかのチェック機構付き" alt="" coords="251,5,409,32"/>
+<area shape="rect" href="namespacedsp__work__utils.html#a4ad592f01cce10586c6ed0467bc338da" title="ファイルの大きさをバイト単位で返却" alt="" coords="249,56,411,83"/>
 </map>
 </div>
 
@@ -171,7 +177,7 @@ file_operation_test.cpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="file__operation__test_8cpp_source.html">file_operation_test.cpp</a> の <a class="el" href="file__operation__test_8cpp_source.html#l00036">36</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="file__operation__test_8cpp_source.html">file_operation_test.cpp</a> の <a class="el" href="file__operation__test_8cpp_source.html#l00042">42</a> 行目に定義があります。</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
@@ -187,6 +193,43 @@ file_operation_test.cpp の依存先関係図:</div>
 <div class="center"><img src="file__operation__test_8cpp_a1c8a469db0f833bb9044a0b7c6f774f4_icgraph.png" border="0" usemap="#afile__operation__test_8cpp_a1c8a469db0f833bb9044a0b7c6f774f4_icgraph" alt=""/></div>
 <map name="afile__operation__test_8cpp_a1c8a469db0f833bb9044a0b7c6f774f4_icgraph" id="afile__operation__test_8cpp_a1c8a469db0f833bb9044a0b7c6f774f4_icgraph">
 <area shape="rect" title=" " alt="" coords="104,5,195,32"/>
+<area shape="rect" href="file__operation__test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9f8cf9f5c3f16e97008c80176d553aa4" name="a9f8cf9f5c3f16e97008c80176d553aa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f8cf9f5c3f16e97008c80176d553aa4">&#9670;&nbsp;</a></span>test_file_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test_file_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="file__operation__test_8cpp_source.html">file_operation_test.cpp</a> の <a class="el" href="file__operation__test_8cpp_source.html#l00055">55</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="file__operation__test_8cpp_a9f8cf9f5c3f16e97008c80176d553aa4_cgraph.png" border="0" usemap="#afile__operation__test_8cpp_a9f8cf9f5c3f16e97008c80176d553aa4_cgraph" alt=""/></div>
+<map name="afile__operation__test_8cpp_a9f8cf9f5c3f16e97008c80176d553aa4_cgraph" id="afile__operation__test_8cpp_a9f8cf9f5c3f16e97008c80176d553aa4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,103,32"/>
+<area shape="rect" href="namespacedsp__work__utils.html#a4ad592f01cce10586c6ed0467bc338da" title="ファイルの大きさをバイト単位で返却" alt="" coords="151,5,312,32"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="file__operation__test_8cpp_a9f8cf9f5c3f16e97008c80176d553aa4_icgraph.png" border="0" usemap="#afile__operation__test_8cpp_a9f8cf9f5c3f16e97008c80176d553aa4_icgraph" alt=""/></div>
+<map name="afile__operation__test_8cpp_a9f8cf9f5c3f16e97008c80176d553aa4_icgraph" id="afile__operation__test_8cpp_a9f8cf9f5c3f16e97008c80176d553aa4_icgraph">
+<area shape="rect" title=" " alt="" coords="104,5,201,32"/>
 <area shape="rect" href="file__operation__test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,56,32"/>
 </map>
 </div>

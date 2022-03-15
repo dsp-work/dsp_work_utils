@@ -91,15 +91,17 @@ $(document).ready(function(){initNavTree('file__operation_8hpp.html',''); initRe
 <div class="textblock"><code>#include &lt;cstdio&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &lt;sys/stat.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 file_operation.hpp の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="file__operation_8hpp__incl.png" border="0" usemap="#autils_2src_2file__operation_8hpp" alt=""/></div>
 <map name="autils_2src_2file__operation_8hpp" id="autils_2src_2file__operation_8hpp">
-<area shape="rect" title=" " alt="" coords="31,5,203,32"/>
+<area shape="rect" title=" " alt="" coords="71,5,243,32"/>
 <area shape="rect" title=" " alt="" coords="5,80,63,107"/>
 <area shape="rect" title=" " alt="" coords="87,80,147,107"/>
 <area shape="rect" title=" " alt="" coords="171,80,225,107"/>
+<area shape="rect" title=" " alt="" coords="249,80,328,107"/>
 </map>
 </div>
 </div>
@@ -115,6 +117,9 @@ file_operation.hpp の依存先関係図:</div>
 <tr class="memitem:aaaaeca371ee94cd56af157158c1fa4b6"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedsp__work__utils.html#aaaaeca371ee94cd56af157158c1fa4b6">dsp_work_utils::fileopen</a> (const std::string &amp;filename, const char mode, const std::string &amp;call_file, const int call_line)</td></tr>
 <tr class="memdesc:aaaaeca371ee94cd56af157158c1fa4b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定のモードでファイルを開く。正しくファイルを開けたかのチェック機構付き  <a href="namespacedsp__work__utils.html#aaaaeca371ee94cd56af157158c1fa4b6">[詳解]</a><br /></td></tr>
 <tr class="separator:aaaaeca371ee94cd56af157158c1fa4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad592f01cce10586c6ed0467bc338da"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedsp__work__utils.html#a4ad592f01cce10586c6ed0467bc338da">dsp_work_utils::file_size</a> (std::string &amp;file_name)</td></tr>
+<tr class="memdesc:a4ad592f01cce10586c6ed0467bc338da"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルの大きさをバイト単位で返却  <a href="namespacedsp__work__utils.html#a4ad592f01cce10586c6ed0467bc338da">[詳解]</a><br /></td></tr>
+<tr class="separator:a4ad592f01cce10586c6ed0467bc338da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
