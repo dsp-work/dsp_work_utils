@@ -5,6 +5,7 @@
 
 #include "file_operation"
 
+#include <cassert>
 #include <cstdio>
 #include <cstdlib>
 #include <string>
@@ -15,6 +16,7 @@ using namespace std;
 using namespace dsp_work_utils;
 
 void run_fileopen();
+void test_file_size();
 
 int main( int argc, char** argv )
 {
@@ -23,6 +25,10 @@ int main( int argc, char** argv )
     if ( args.at( 1 ) == string( "fileopen" ) )
     {
         run_fileopen();
+    }
+    else if ( args.at( 1 ) == string( "file_size" ) )
+    {
+        test_file_size();
     }
     else
     {
@@ -35,7 +41,7 @@ int main( int argc, char** argv )
 
 void run_fileopen()
 {
-    // resd test
+    // read test
     FILE* fp = fileopen( string( "./test_data.txt" ), 'r', __FILE__, __LINE__ );
     fclose( fp );
 
@@ -44,4 +50,13 @@ void run_fileopen()
     fclose( fp );
     fp = fileopen( string( "./test_data_.txt" ), 'r', __FILE__, __LINE__ );
     fclose( fp );
+}
+
+void test_file_size()
+{
+    string filename1( "./test.dat" );
+    assert( 864000 == file_size( filename1 ) );
+
+    string filename2( "./test.wav" );
+    assert( 288044 == file_size( filename2 ) );
 }
