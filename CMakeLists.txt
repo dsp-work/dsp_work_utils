@@ -26,10 +26,10 @@ target_include_directories (${PROJECT_NAME} INTERFACE
 
 # The dsp_work_utils target will be located in the DspWork namespace. Other CMake
 # targets can refer to it using DspWork::Utils.
-export (TARGETS ${PROJECT_NAME} NAMESPACE DspWork:: FILE dsp_work_utilsTargets.cmake)
+export (TARGETS ${PROJECT_NAME} NAMESPACE ${PROJECT_NAME}:: FILE ${PROJECT_NAME}Targets.cmake)
 # Export dsp_work_utils package to CMake registry such that it can be easily found by
 # CMake even if it has not been installed to a standard directory.
-export (PACKAGE dsp_work_utils)
+export (PACKAGE ${PROJECT_NAME})
 
 # for development executable(optional activate)
 option(DEVELOP_EXECUTABLE_${PROJECT_NAME} "Build develop executable file on ${PROJECT_NAME} package" OFF)
