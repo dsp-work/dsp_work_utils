@@ -18,7 +18,7 @@ add_library(${PROJECT_NAME} INTERFACE)
 target_include_directories(${PROJECT_NAME} INTERFACE utils)
 
 # Imported target support
-add_library (DspWork::Utils ALIAS ${PROJECT_NAME})
+add_library (${PROJECT_NAME}::utils ALIAS ${PROJECT_NAME})
 target_include_directories (${PROJECT_NAME} INTERFACE
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
   $<INSTALL_INTERFACE:${INCLUDE_INSTALL_DIR}>
@@ -40,6 +40,7 @@ if(DEVELOP_EXECUTABLE_${PROJECT_NAME})
 endif()
 
 # tests
+include(CTest)
 option(${PROJECT_NAME}-with-test "Enable creation of tests." ON)
 if(${PROJECT_NAME}-with-test)
   enable_testing()
