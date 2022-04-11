@@ -9,10 +9,15 @@ include(./.cmake/cxx_config.cmake)
 #----------------- clang-format config -------------------------
 include(./.cmake/clang-format.cmake)
 
+# ---------- dependencies ----------
+include(./.cmake/dependency_boost-cmake.cmake)
+
+
 #------------------ build source config ------------------
 
 # libraries
 add_library(${PROJECT_NAME} INTERFACE)
+  target_link_libraries(${PROJECT_NAME} INTERFACE Boost::boost)
 
 # include path
 target_include_directories(${PROJECT_NAME} INTERFACE utils)
