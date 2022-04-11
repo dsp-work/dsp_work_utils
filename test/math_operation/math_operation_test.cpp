@@ -41,5 +41,7 @@ void test_pow2()
     double ans = 9.0;
     const unsigned int acc = 1000;    // 10^-n(小数点以下n桁)まで精度を検査
 
+    printf( "output: %.15f\n", static_cast< double >( static_cast< long int >( std::round( ans * acc ) ) ) / static_cast< double >( acc ) );
+    printf( "correct: %.15f\n", static_cast< double >( static_cast< long int >( std::round( pow2( a ) * acc ) ) ) / static_cast< double >( acc ) );
     assert( static_cast< long int >( std::round( ans * acc ) ) == static_cast< long int >( std::round( pow2( a ) * acc ) ) );
 }
