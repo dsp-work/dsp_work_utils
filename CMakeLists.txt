@@ -18,6 +18,10 @@ include(./.cmake/dependency_boost-cmake.cmake)
 # libraries
 add_library(${PROJECT_NAME} INTERFACE)
   target_link_libraries(${PROJECT_NAME} INTERFACE Boost::boost)
+if(UNIX)
+  # depends from stack backtrace
+  target_link_libraries(${PROJECT_NAME} INTERFACE dl)
+endif()
 
 # include path
 target_include_directories(${PROJECT_NAME} INTERFACE utils)
@@ -45,9 +49,9 @@ if(DEVELOP_EXECUTABLE_${PROJECT_NAME})
 endif()
 
 # tests
-include(CTest)
 option(${PROJECT_NAME}-with-test "Enable creation of tests." ON)
 if(${PROJECT_NAME}-with-test)
   enable_testing()
+  include(CTest)
   add_subdirectory(test)
 endif()
