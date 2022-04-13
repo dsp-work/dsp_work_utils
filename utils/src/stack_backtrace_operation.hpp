@@ -1,3 +1,9 @@
+//!
+//! @file stack_backtrace.hpp
+//! @brief stack backtrace関係のモジュール
+//! @details Boostのbacktraceを利用
+//!
+
 #ifndef DSPWORK_STACK_BACKTRACE_HPP_
 #define DSPWORK_STACK_BACKTRACE_HPP_
 
@@ -24,6 +30,15 @@ namespace boost
             return do_stream_st( os, bt );
         }
 
+        ///
+        /// @brief Boostのbacktraceを書式整形する
+        /// @return stack backtraceの整形済み文字列
+        /// @details 整形は<br>
+        /// stack番号 : 関数名<br>
+        ///     at 実装ファイル : 行番号<br>
+        /// の順。symbol情報がない場合(主にWindows)、実行ファイル名＋stackのアドレスになる場合がある。<br>
+        /// WindowsではClangまたはmsvcの使用を推奨する。
+        ///
         template< class CharT, class TraitsT, class Allocator >
         std::basic_ostream< CharT, TraitsT >& do_stream_st( std::basic_ostream< CharT, TraitsT >& os, const basic_stacktrace< Allocator >& bt )
         {
