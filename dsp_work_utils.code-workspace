@@ -10,7 +10,9 @@
 		],
 		"C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
 		"windows": {
-			"cmake.generator": "MinGW Makefiles"
+			"cmake.preferredGenerators": ["Visual Studio 17 2022", "Visual Studio 16 2019", "Visual Studio 15 2017",
+				"Visual Studio 14 2015", "Visual Studio 12 2013", "Visual Studio 11 2012", "Visual Studio 10 2010",
+			"MinGW Makefiles"],
 		},
 		"cmake.configureArgs": [
 			"-DDEVELOP_EXECUTABLE_dsp_work_utils=ON"
@@ -81,7 +83,9 @@
 			"xtr1common": "cpp",
 			"xtree": "cpp",
 			"xutility": "cpp",
-			"file_operation": "cpp"
+			"file_operation": "cpp",
+			"stdint.h": "c",
+			"*.ipp": "cpp"
 		}
 	},
 	"extensions": {
