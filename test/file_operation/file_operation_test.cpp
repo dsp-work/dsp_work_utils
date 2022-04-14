@@ -42,14 +42,39 @@ int main( int argc, char** argv )
 void run_fileopen()
 {
     // read test
-    FILE* fp = fileopen( string( "./test_data.txt" ), 'r', __FILE__, __LINE__ );
+    FILE* fp = fileopen( string( "./test_data.txt" ), "r" );
     fclose( fp );
 
     // write test(create files)
-    fp = fileopen( string( "./test_data_.txt" ), 'w', __FILE__, __LINE__ );
+    fp = fileopen( string( "./test_data_.txt" ), "w" );
     fclose( fp );
-    fp = fileopen( string( "./test_data_.txt" ), 'r', __FILE__, __LINE__ );
+    fp = fileopen( string( "./test_data_.txt" ), "r" );
     fclose( fp );
+    fp = fileopen( "./test.dat", "rb" );
+    fclose( fp );
+    fp = fileopen( "./test.dat", "wb" );
+    fclose( fp );
+
+    // error test
+    try
+    {
+        fp = fileopen( "./test_data.txt", "zz" );    // error(例外)発生
+    }
+    catch ( std::runtime_error e )    // 例外種別関係なくキャッチ
+    {
+        std::cerr << "some_exception: " << e.what() << std::endl;
+        try
+        {
+            fp = fileopen( "./test_data.txt", "hoge" );    // error(例外)発生
+        }
+        catch ( std::invalid_argument e )    // 例外種別関係なくキャッチ
+        {
+            std::cerr << "some_exception: " << e.what() << std::endl;
+            exit( EXIT_SUCCESS );
+        }
+    }
+
+    exit( EXIT_FAILURE );
 }
 
 void test_file_size()

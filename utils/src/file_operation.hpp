@@ -9,8 +9,12 @@
 
 #include <cstdio>
 #include <cstdlib>
+#include <iostream>
+#include <stdexcept>
 #include <string>
+#include <string_operation>
 #include <sys/stat.h>
+
 
 namespace dsp_work_utils
 {
@@ -22,19 +26,21 @@ namespace dsp_work_utils
     /// @details 開くファイルのパスは絶対パスや実行ファイルからの相対パスで指定する。
     ///
     inline FILE* fileopen(
-        const std::string& filename,
-        const char mode,
-        const std::string& call_file,
-        const int call_line )
+        const std::string filename,
+        const std::string mode )
     {
-        FILE* fp = fopen( filename.c_str(), &mode );
+        // mode checking
+        if ( mode.size() >= 3 || mode.size() == 0 )
+        {
+            throw std::invalid_argument( "The mode is require 'r'(read), 'w'(write),...others. See official `fopen` documents." );
+        }
+
+        FILE* fp = fopen( filename.c_str(), mode.c_str() );
+
+        // error handling
         if ( fp == NULL )
         {
-            fprintf(
-                stderr,
-                "Error: [%s l.%d]Can't open file.(file name : %s, mode : %c)\n",
-                call_file.c_str(), call_line, filename.c_str(), mode );
-            exit( EXIT_FAILURE );
+            throw std::runtime_error( format( "Can't open file.(file name : %s, mode : %s)\n", filename.c_str(), mode.c_str() ) );
         }
         return fp;
     }
