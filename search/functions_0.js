@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['exist_5fdirectory_0',['exist_directory',['../namespacedsp__work__utils.html#ad4477ad210da033faaba8c7396b9be4a',1,'dsp_work_utils']]]
+  ['do_5fstream_5fst_0',['do_stream_st',['../namespaceboost_1_1stacktrace.html#adb14d71e738e56c21c330e52c62625c5',1,'boost::stacktrace']]]
 ];

@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['main_0',['main',['../directory__operation__test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;directory_operation_test.cpp'],['../file__operation__test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;file_operation_test.cpp'],['../math__operation__test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;math_operation_test.cpp'],['../string__operation__test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;string_operation_test.cpp']]],
-  ['make_5fdirectory_1',['make_directory',['../namespacedsp__work__utils.html#a7540cdbbf8b7b5b0662fcac2ac219cdf',1,'dsp_work_utils']]],
-  ['math_5foperation_2ehpp_2',['math_operation.hpp',['../math__operation_8hpp.html',1,'']]],
-  ['math_5foperation_5ftest_2ecpp_3',['math_operation_test.cpp',['../math__operation__test_8cpp.html',1,'']]]
+  ['file_5foperation_2ehpp_0',['file_operation.hpp',['../file__operation_8hpp.html',1,'']]],
+  ['file_5foperation_5ftest_2ecpp_1',['file_operation_test.cpp',['../file__operation__test_8cpp.html',1,'']]],
+  ['file_5fsize_2',['file_size',['../namespacedsp__work__utils.html#a4ad592f01cce10586c6ed0467bc338da',1,'dsp_work_utils']]],
+  ['fileopen_3',['fileopen',['../namespacedsp__work__utils.html#affa01488a1425f304ab12db1af45b163',1,'dsp_work_utils']]],
+  ['format_4',['format',['../namespacedsp__work__utils.html#ac199c45aadd15d34198387079224c348',1,'dsp_work_utils']]]
 ];

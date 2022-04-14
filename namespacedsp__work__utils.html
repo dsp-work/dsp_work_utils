@@ -95,9 +95,9 @@ $(document).ready(function(){initNavTree('namespacedsp__work__utils.html',''); i
 <tr class="separator:ad4477ad210da033faaba8c7396b9be4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7540cdbbf8b7b5b0662fcac2ac219cdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedsp__work__utils.html#a7540cdbbf8b7b5b0662fcac2ac219cdf">make_directory</a> (std::string dir_name)</td></tr>
 <tr class="separator:a7540cdbbf8b7b5b0662fcac2ac219cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaaeca371ee94cd56af157158c1fa4b6"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedsp__work__utils.html#aaaaeca371ee94cd56af157158c1fa4b6">fileopen</a> (const std::string &amp;filename, const char mode, const std::string &amp;call_file, const int call_line)</td></tr>
-<tr class="memdesc:aaaaeca371ee94cd56af157158c1fa4b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定のモードでファイルを開く。正しくファイルを開けたかのチェック機構付き  <a href="namespacedsp__work__utils.html#aaaaeca371ee94cd56af157158c1fa4b6">[詳解]</a><br /></td></tr>
-<tr class="separator:aaaaeca371ee94cd56af157158c1fa4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa01488a1425f304ab12db1af45b163"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedsp__work__utils.html#affa01488a1425f304ab12db1af45b163">fileopen</a> (const std::string filename, const std::string mode)</td></tr>
+<tr class="memdesc:affa01488a1425f304ab12db1af45b163"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定のモードでファイルを開く。正しくファイルを開けたかのチェック機構付き  <a href="namespacedsp__work__utils.html#affa01488a1425f304ab12db1af45b163">[詳解]</a><br /></td></tr>
+<tr class="separator:affa01488a1425f304ab12db1af45b163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ad592f01cce10586c6ed0467bc338da"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedsp__work__utils.html#a4ad592f01cce10586c6ed0467bc338da">file_size</a> (std::string &amp;file_name)</td></tr>
 <tr class="memdesc:a4ad592f01cce10586c6ed0467bc338da"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルの大きさをバイト単位で返却  <a href="namespacedsp__work__utils.html#a4ad592f01cce10586c6ed0467bc338da">[詳解]</a><br /></td></tr>
 <tr class="separator:a4ad592f01cce10586c6ed0467bc338da"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,6 +168,9 @@ $(document).ready(function(){initNavTree('namespacedsp__work__utils.html',''); i
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::size_t dsp_work_utils::file_size </td>
@@ -177,6 +180,11 @@ $(document).ready(function(){initNavTree('namespacedsp__work__utils.html',''); i
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>ファイルの大きさをバイト単位で返却 </p>
@@ -186,11 +194,11 @@ $(document).ready(function(){initNavTree('namespacedsp__work__utils.html',''); i
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>戻り値</dt><dd>std::size_t 変数値などを埋め込んだ整形済み文字列</dd></dl>
+<dl class="section return"><dt>戻り値</dt><dd>std::size_t バイト単位のファイルの大きさ</dd></dl>
 <p>開くファイルのパスは絶対パスや実行ファイルからの相対パスで指定する。<br  />
  ファイルが見つからない場合、エラー終了する。 </p>
 
-<p class="definition"> <a class="el" href="file__operation_8hpp_source.html">file_operation.hpp</a> の <a class="el" href="file__operation_8hpp_source.html#l00049">49</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="file__operation_8hpp_source.html">file_operation.hpp</a> の <a class="el" href="file__operation_8hpp_source.html#l00055">55</a> 行目に定義があります。</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
@@ -204,8 +212,8 @@ $(document).ready(function(){initNavTree('namespacedsp__work__utils.html',''); i
 
 </div>
 </div>
-<a id="aaaaeca371ee94cd56af157158c1fa4b6" name="aaaaeca371ee94cd56af157158c1fa4b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaaaeca371ee94cd56af157158c1fa4b6">&#9670;&nbsp;</a></span>fileopen()</h2>
+<a id="affa01488a1425f304ab12db1af45b163" name="affa01488a1425f304ab12db1af45b163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affa01488a1425f304ab12db1af45b163">&#9670;&nbsp;</a></span>fileopen()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -216,26 +224,14 @@ $(document).ready(function(){initNavTree('namespacedsp__work__utils.html',''); i
         <tr>
           <td class="memname">FILE * dsp_work_utils::fileopen </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const std::string&#160;</td>
           <td class="paramname"><em>filename</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char&#160;</td>
-          <td class="paramname"><em>mode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>call_file</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>call_line</em>&#160;</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -258,15 +254,24 @@ $(document).ready(function(){initNavTree('namespacedsp__work__utils.html',''); i
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>戻り値</dt><dd>std::string 変数値などを埋め込んだ整形済み文字列</dd></dl>
+<dl class="section return"><dt>戻り値</dt><dd>FILE* 開いたファイルのポインタ</dd></dl>
 <p>開くファイルのパスは絶対パスや実行ファイルからの相対パスで指定する。 </p>
 
-<p class="definition"> <a class="el" href="file__operation_8hpp_source.html">file_operation.hpp</a> の <a class="el" href="file__operation_8hpp_source.html#l00024">24</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="file__operation_8hpp_source.html">file_operation.hpp</a> の <a class="el" href="file__operation_8hpp_source.html#l00028">28</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacedsp__work__utils_affa01488a1425f304ab12db1af45b163_cgraph.png" border="0" usemap="#anamespacedsp__work__utils_affa01488a1425f304ab12db1af45b163_cgraph" alt=""/></div>
+<map name="anamespacedsp__work__utils_affa01488a1425f304ab12db1af45b163_cgraph" id="anamespacedsp__work__utils_affa01488a1425f304ab12db1af45b163_cgraph">
+<area shape="rect" title="指定のモードでファイルを開く。正しくファイルを開けたかのチェック機構付き" alt="" coords="5,5,164,32"/>
+<area shape="rect" href="namespacedsp__work__utils.html#ac199c45aadd15d34198387079224c348" title="printfと同じ用法で、stringに出力する関数" alt="" coords="212,5,364,32"/>
+</map>
+</div>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespacedsp__work__utils_aaaaeca371ee94cd56af157158c1fa4b6_icgraph.png" border="0" usemap="#anamespacedsp__work__utils_aaaaeca371ee94cd56af157158c1fa4b6_icgraph" alt=""/></div>
-<map name="anamespacedsp__work__utils_aaaaeca371ee94cd56af157158c1fa4b6_icgraph" id="anamespacedsp__work__utils_aaaaeca371ee94cd56af157158c1fa4b6_icgraph">
+<div class="center"><img src="namespacedsp__work__utils_affa01488a1425f304ab12db1af45b163_icgraph.png" border="0" usemap="#anamespacedsp__work__utils_affa01488a1425f304ab12db1af45b163_icgraph" alt=""/></div>
+<map name="anamespacedsp__work__utils_affa01488a1425f304ab12db1af45b163_icgraph" id="anamespacedsp__work__utils_affa01488a1425f304ab12db1af45b163_icgraph">
 <area shape="rect" title="指定のモードでファイルを開く。正しくファイルを開けたかのチェック機構付き" alt="" coords="243,5,401,32"/>
 <area shape="rect" href="file__operation__test_8cpp.html#a1c8a469db0f833bb9044a0b7c6f774f4" title=" " alt="" coords="104,5,195,32"/>
 <area shape="rect" href="file__operation__test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,56,32"/>
@@ -320,9 +325,12 @@ template&lt;typename... Args&gt; </div>
 <div class="dyncontent">
 <div class="center"><img src="namespacedsp__work__utils_ac199c45aadd15d34198387079224c348_icgraph.png" border="0" usemap="#anamespacedsp__work__utils_ac199c45aadd15d34198387079224c348_icgraph" alt=""/></div>
 <map name="anamespacedsp__work__utils_ac199c45aadd15d34198387079224c348_icgraph" id="anamespacedsp__work__utils_ac199c45aadd15d34198387079224c348_icgraph">
-<area shape="rect" title="printfと同じ用法で、stringに出力する関数" alt="" coords="240,5,392,32"/>
-<area shape="rect" href="string__operation__test_8cpp.html#a1e4665c4da61fe2575ef693b5cd09be3" title=" " alt="" coords="104,5,192,32"/>
-<area shape="rect" href="string__operation__test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,56,32"/>
+<area shape="rect" title="printfと同じ用法で、stringに出力する関数" alt="" coords="449,31,601,57"/>
+<area shape="rect" href="namespacedsp__work__utils.html#affa01488a1425f304ab12db1af45b163" title="指定のモードでファイルを開く。正しくファイルを開けたかのチェック機構付き" alt="" coords="243,5,401,32"/>
+<area shape="rect" href="string__operation__test_8cpp.html#a1e4665c4da61fe2575ef693b5cd09be3" title=" " alt="" coords="278,56,366,83"/>
+<area shape="rect" href="file__operation__test_8cpp.html#a1c8a469db0f833bb9044a0b7c6f774f4" title=" " alt="" coords="104,5,195,32"/>
+<area shape="rect" href="file__operation__test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,56,32"/>
+<area shape="rect" href="string__operation__test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="124,56,175,83"/>
 </map>
 </div>
 

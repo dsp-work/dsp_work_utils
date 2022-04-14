@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['dsp_5fwork_5futils_0',['dsp_work_utils',['../namespacedsp__work__utils.html',1,'']]]
+  ['boost_0',['boost',['../namespaceboost.html',1,'']]],
+  ['stacktrace_1',['stacktrace',['../namespaceboost_1_1stacktrace.html',1,'boost']]]
 ];
