@@ -18,10 +18,9 @@ include(./.cmake/dependency_boost-cmake.cmake)
 # libraries
 add_library(${PROJECT_NAME} INTERFACE)
   target_link_libraries(${PROJECT_NAME} INTERFACE Boost::boost)
-if(UNIX)
   # depends from stack backtrace
-  target_link_libraries(${PROJECT_NAME} INTERFACE dl)
-endif()
+  target_link_libraries(${PROJECT_NAME} INTERFACE ${CMAKE_DL_LIBS})
+
 
 # include path
 target_include_directories(${PROJECT_NAME} INTERFACE utils)
