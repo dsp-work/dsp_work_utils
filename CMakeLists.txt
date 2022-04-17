@@ -20,6 +20,9 @@ add_library(${PROJECT_NAME} INTERFACE)
   target_link_libraries(${PROJECT_NAME} INTERFACE Boost::boost)
   # depends from stack backtrace
   target_link_libraries(${PROJECT_NAME} INTERFACE ${CMAKE_DL_LIBS})
+  IF(APPLE)
+    target_compile_definitions(${PROJECT_NAME} INTERFACE _GNU_SOURCE)
+  endif()
 
 
 # include path
