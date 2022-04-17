@@ -4,15 +4,15 @@
 //! @details
 //!
 
-#ifndef DSPWORK_FILE_OPERATION_HPP_
-#define DSPWORK_FILE_OPERATION_HPP_
+#ifndef DSPWORK_FILE_HPP_
+#define DSPWORK_FILE_HPP_
 
+#include <DspWorkUtils/string>
 #include <cstdio>
 #include <cstdlib>
 #include <iostream>
 #include <stdexcept>
 #include <string>
-#include <string_operation>
 #include <sys/stat.h>
 
 
@@ -78,4 +78,4 @@ namespace dsp_work_utils
 
 }    // namespace dsp_work_utils
 
-#endif /* DSPWORK_FILE_OPERATION_HPP_ */
+#endif /* DSPWORK_FILE_HPP_ */

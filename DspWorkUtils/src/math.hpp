@@ -4,8 +4,8 @@
 //! @details
 //!
 
-#ifndef DSPWORK_MATH_OPERATION_HPP_
-#define DSPWORK_MATH_OPERATION_HPP_
+#ifndef DSPWORK_MATH_HPP_
+#define DSPWORK_MATH_HPP_
 
 namespace dsp_work_utils
 {
@@ -21,4 +21,4 @@ namespace dsp_work_utils
         return ( num * num );
     }
 }    // namespace dsp_work_utils
-#endif /* DSPWORK_MATH_OPERATION_HPP_ */
+#endif /* DSPWORK_MATH_HPP_ */

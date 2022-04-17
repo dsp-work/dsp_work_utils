@@ -3,8 +3,7 @@
 //!
 
 
-#include "math_operation"
-
+#include <DspWorkUtils/math>
 #include <cassert>
 #include <cmath>
 #include <cstdio>
