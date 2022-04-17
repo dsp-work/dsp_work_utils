@@ -3,8 +3,7 @@
 //!
 
 
-#include "string_operation"
-
+#include <DspWorkUtils/string>
 #include <cassert>
 #include <cstdio>
 #include <cstdlib>
@@ -43,10 +42,10 @@ void test_format()
     double a = 3.0;
     double ans = 9.0;
 
-    printf( "%2.2fの二乗は%2.2fです。", a, ans );
+    printf( "%2.2fの二乗は%2.2fです。\n", a, ans );
 
-    auto str_result = format( "%2.2fの二乗は%2.2fです。", a, ans );
-    assert( string( "3.00の二乗は9.00です。" ) == str_result );
+    auto str_result = format( "%2.2fの二乗は%2.2fです ", a, ans );
+    assert( string( "3.00の二乗は9.00です " ) == str_result );
 }
 
 void test_split_char()

@@ -4,8 +4,8 @@
 //! @details
 //!
 
-#ifndef DSPWORK_STRING_OPERATION_HPP_
-#define DSPWORK_STRING_OPERATION_HPP_
+#ifndef DSPWORK_STRING_HPP_
+#define DSPWORK_STRING_HPP_
 
 #include <sstream>
 #include <string>
@@ -51,4 +51,4 @@ namespace dsp_work_utils
         return strs;
     }
 }    // namespace dsp_work_utils
-#endif /* DSPWORK_STRING_OPERATION_HPP_ */
+#endif /* DSPWORK_STRING_HPP_ */

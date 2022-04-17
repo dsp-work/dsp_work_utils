@@ -4,8 +4,8 @@
 //! @details
 //!
 
-#ifndef DSPWORK_DIRECTORY_OPERATION_HPP_
-#define DSPWORK_DIRECTORY_OPERATION_HPP_
+#ifndef DSPWORK_DIRECTORY_HPP_
+#define DSPWORK_DIRECTORY_HPP_
 
 #include <sys/stat.h>
 //#include <sys/types.h>
@@ -66,4 +66,4 @@ namespace dsp_work_utils
         }
     }
 }    // namespace dsp_work_utils
-#endif /* DSPWORK_DIRECTORY_OPERATION_HPP_ */
+#endif /* DSPWORK_DIRECTORY_HPP_ */

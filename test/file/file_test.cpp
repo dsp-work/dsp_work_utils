@@ -3,8 +3,7 @@
 //!
 
 
-#include "file_operation"
-
+#include <DspWorkUtils/file>
 #include <cassert>
 #include <cstdio>
 #include <cstdlib>
@@ -50,6 +49,8 @@ void run_fileopen()
     fclose( fp );
     fp = fileopen( string( "./test_data_.txt" ), "r" );
     fclose( fp );
+
+    // mode test
     fp = fileopen( "./test.dat", "rb" );
     fclose( fp );
     fp = fileopen( "./test_write.dat", "wb" );
