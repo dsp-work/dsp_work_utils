@@ -52,7 +52,7 @@ void run_fileopen()
     fclose( fp );
     fp = fileopen( "./test.dat", "rb" );
     fclose( fp );
-    fp = fileopen( "./test.dat", "wb" );
+    fp = fileopen( "./test_write.dat", "wb" );
     fclose( fp );
 
     // error test
