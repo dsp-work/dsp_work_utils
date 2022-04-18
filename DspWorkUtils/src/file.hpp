@@ -30,9 +30,13 @@ namespace dsp_work_utils
         const std::string mode )
     {
         // mode checking
-        if ( mode.size() >= 3 || mode.size() == 0 )
+        if ( mode != std::string( "r" ) && mode != std::string( "w" ) && mode != std::string( "a" ) && mode != std::string( "rb" ) && mode != std::string( "wb" ) && mode != std::string( "ab" ) && mode != std::string( "r+" ) && mode != std::string( "w+" ) && mode != std::string( "a+" ) && mode != std::string( "r+b" ) && mode != std::string( "rb+" ) && mode != std::string( "w+b" ) && mode != std::string( "wb+" ) && mode != std::string( "a+b" ) && mode != std::string( "ab+" ) )
         {
-            throw std::invalid_argument( "The mode is require 'r'(read), 'w'(write),...others. See official `fopen` documents." );
+            fprintf(
+                stderr,
+                "The mode is require 'r'(read), 'w'(write),...others. Input is %s. See official `fopen` documents.\n",
+                mode.c_str() );
+            exit( EXIT_FAILURE );
         }
 
         FILE* fp = fopen( filename.c_str(), mode.c_str() );
@@ -40,7 +44,11 @@ namespace dsp_work_utils
         // error handling
         if ( fp == NULL )
         {
-            throw std::runtime_error( format( "Can't open file.(file name : %s, mode : %s)\n", filename.c_str(), mode.c_str() ) );
+            fprintf(
+                stderr,
+                "Error: Can't open file.(file name : %s, mode : %s)\n",
+                filename.c_str(), mode.c_str() );
+            exit( EXIT_FAILURE );
         }
         return fp;
     }
