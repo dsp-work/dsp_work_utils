@@ -56,26 +56,27 @@ void run_fileopen()
     fp = fileopen( "./test_write.dat", "wb" );
     fclose( fp );
 
-    // error test
-    try
-    {
-        fp = fileopen( "./test_data.txt", "zz" );    // error(例外)発生
-    }
-    catch ( std::runtime_error e )    // 例外種別関係なくキャッチ
-    {
-        std::cerr << "some_exception: " << e.what() << std::endl;
+    /* Using exception is not recomended from LLVM.
+        // error test
         try
         {
-            fp = fileopen( "./test_data.txt", "hoge" );    // error(例外)発生
+            fp = fileopen( "./test_da.txt", "r" );    // error(例外)発生
         }
-        catch ( std::invalid_argument e )    // 例外種別関係なくキャッチ
+        catch ( std::runtime_error e )    // 例外種別関係なくキャッチ
         {
             std::cerr << "some_exception: " << e.what() << std::endl;
-            exit( EXIT_SUCCESS );
+            try
+            {
+                fp = fileopen( "./test_data.txt", "hoge" );    // error(例外)発生
+            }
+            catch ( std::invalid_argument e )    // 例外種別関係なくキャッチ
+            {
+                std::cerr << "some_exception: " << e.what() << std::endl;
+                return;
+            }
         }
-    }
-
-    exit( EXIT_FAILURE );
+        exit( EXIT_FAILURE );
+    */
 }
 
 void test_file_size()
