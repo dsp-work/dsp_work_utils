@@ -26,7 +26,7 @@ namespace dsp_work_utils
     /// @details 開くファイルのパスは絶対パスや実行ファイルからの相対パスで指定する。
     ///
     inline FILE* fileopen(
-        const std::string filename,
+        const std::string filepath,
         const std::string mode )
     {
         // mode checking
@@ -39,7 +39,21 @@ namespace dsp_work_utils
             exit( EXIT_FAILURE );
         }
 
-        FILE* fp = fopen( filename.c_str(), mode.c_str() );
+        FILE* fp = NULL;
+#ifdef _MSC_VER
+        errno_t error = fopen_s( &fp, filepath.c_str(), mode.c_str() );
+
+        // error handling
+        if ( error != 0 )
+        {
+            fprintf(
+                stderr,
+                "Error: Can't open file.(file name : %s, mode : %s, errno : %d)\n",
+                filepath.c_str(), mode.c_str(), error );
+            exit( EXIT_FAILURE );
+        }
+#else
+        fp = fopen( filepath.c_str(), mode.c_str() );
 
         // error handling
         if ( fp == NULL )
@@ -47,9 +61,10 @@ namespace dsp_work_utils
             fprintf(
                 stderr,
                 "Error: Can't open file.(file name : %s, mode : %s)\n",
-                filename.c_str(), mode.c_str() );
+                filepath.c_str(), mode.c_str() );
             exit( EXIT_FAILURE );
         }
+#endif
         return fp;
     }
 
