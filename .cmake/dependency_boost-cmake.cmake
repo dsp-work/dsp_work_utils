@@ -1,6 +1,9 @@
 set(BOOST_DISABLE_TESTS OFF CACHE BOOL "build flag of test for boost-cmake" FORCE)
-find_package(Boost 1.78.0)
-if (boost_FOUND)
+set(Boost_USE_STATIC_LIBS ON)
+# TO DO:
+# cmake[^3.19] --> using version range
+find_package(Boost 1.78)
+if (Boost_FOUND)
   message(STATUS "Boost is found!")
 else() # 見つからない場合には自動インストール
   message(STATUS "Boost is not found!")
