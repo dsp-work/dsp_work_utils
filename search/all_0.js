@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['boost_0',['boost',['../namespaceboost.html',1,'']]],
-  ['stacktrace_1',['stacktrace',['../namespaceboost_1_1stacktrace.html',1,'boost']]]
+  ['directory_5ftest_2ecpp_0',['directory_test.cpp',['../directory__test_8cpp.html',1,'']]]
 ];

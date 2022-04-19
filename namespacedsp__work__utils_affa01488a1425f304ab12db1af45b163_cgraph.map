@@ -1,4 +1,0 @@
-<map id="dsp_work_utils::fileopen" name="dsp_work_utils::fileopen">
-<area shape="rect" id="node1" title="指定のモードでファイルを開く。正しくファイルを開けたかのチェック機構付き" alt="" coords="5,5,164,32"/>
-<area shape="rect" id="node2" href="$namespacedsp__work__utils.html#ac199c45aadd15d34198387079224c348" title="printfと同じ用法で、stringに出力する関数" alt="" coords="212,5,364,32"/>
-</map>

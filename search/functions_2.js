@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['file_5fsize_0',['file_size',['../namespacedsp__work__utils.html#a4ad592f01cce10586c6ed0467bc338da',1,'dsp_work_utils']]],
-  ['fileopen_1',['fileopen',['../namespacedsp__work__utils.html#affa01488a1425f304ab12db1af45b163',1,'dsp_work_utils']]],
-  ['format_2',['format',['../namespacedsp__work__utils.html#ac199c45aadd15d34198387079224c348',1,'dsp_work_utils']]]
+  ['sub_5ffunc_0',['sub_func',['../stack__backtrace__test_8cpp.html#abceeb850ce6f3780d81970e31b8e76ca',1,'sub_func(int):&#160;with_test.cpp'],['../with__test_8cpp.html#a120ae90403ba02a22054091f1eb39ede',1,'sub_func(int level):&#160;with_test.cpp']]],
+  ['subsub_5ffunc_1',['subsub_func',['../with__test_8cpp.html#a711111d9f1b2a22c9ea8699ceef3827a',1,'with_test.cpp']]]
 ];

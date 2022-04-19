@@ -25,13 +25,6 @@
 var NAVTREE =
 [
   [ "dsp_work_utils", "index.html", [
-    [ "名前空間", "namespaces.html", [
-      [ "名前空間一覧", "namespaces.html", "namespaces_dup" ],
-      [ "名前空間メンバ", "namespacemembers.html", [
-        [ "全て", "namespacemembers.html", null ],
-        [ "関数", "namespacemembers_func.html", null ]
-      ] ]
-    ] ],
     [ "ファイル", "files.html", [
       [ "ファイル一覧", "files.html", "files_dup" ],
       [ "ファイルメンバ", "globals.html", [
@@ -44,7 +37,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"dir_13e138d54eb8818da29c3992edef070a.html"
+"dir_137818f07b93cd14b6ce92e51caad2df.html"
 ];
 
 var SYNCONMSG = 'クリックで同期表示が無効になります';

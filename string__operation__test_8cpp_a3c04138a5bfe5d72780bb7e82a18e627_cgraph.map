@@ -1,7 +1,0 @@
-<map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,56,57"/>
-<area shape="rect" id="node2" href="$string__operation__test_8cpp.html#a1e4665c4da61fe2575ef693b5cd09be3" title=" " alt="" coords="113,5,201,32"/>
-<area shape="rect" id="node4" href="$string__operation__test_8cpp.html#a34e8926f14463ecba43a63340542862b" title=" " alt="" coords="104,56,211,83"/>
-<area shape="rect" id="node3" href="$namespacedsp__work__utils.html#ac199c45aadd15d34198387079224c348" title="printfと同じ用法で、stringに出力する関数" alt="" coords="268,5,420,32"/>
-<area shape="rect" id="node5" href="$namespacedsp__work__utils.html#a455a029e9f0cee85ff0c432e14151271" title="区切り文字によって文字列を分割する関数" alt="" coords="259,56,429,83"/>
-</map>

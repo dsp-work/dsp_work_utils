@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dsp_work_utils: test/stack_backtrace_operation/with_test.cpp ソースファイル</title>
+<title>dsp_work_utils: test/stack_backtrace/with_test.cpp ソースファイル</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,36 +85,35 @@ $(document).ready(function(){initNavTree('with__test_8cpp_source.html',''); init
   <div class="headertitle"><div class="title">with_test.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="with__test_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;stack_backtrace_operation&quot;</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<a href="with__test_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;DspWorkUtils/stack_backtrace&gt;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="with__test_8cpp.html#a711111d9f1b2a22c9ea8699ceef3827a">    7</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="with__test_8cpp.html#a711111d9f1b2a22c9ea8699ceef3827a">subsub_func</a>()</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;stack_trace\n&quot;</span>;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    std::cout &lt;&lt; boost::stacktrace::stacktrace();</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    exit( EXIT_SUCCESS );</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>}</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="stack__backtrace__operation__test_8cpp.html#abceeb850ce6f3780d81970e31b8e76ca">   14</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="with__test_8cpp.html#a120ae90403ba02a22054091f1eb39ede">sub_func</a>( <span class="keywordtype">int</span> level )</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordflow">if</span> ( 0 &lt; level )</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <a class="code hl_function" href="with__test_8cpp.html#a120ae90403ba02a22054091f1eb39ede">sub_func</a>( level - 1 );</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_function" href="with__test_8cpp.html#a711111d9f1b2a22c9ea8699ceef3827a">subsub_func</a>();</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
-<div class="ttc" id="awith__test_8cpp_html_a120ae90403ba02a22054091f1eb39ede"><div class="ttname"><a href="with__test_8cpp.html#a120ae90403ba02a22054091f1eb39ede">sub_func</a></div><div class="ttdeci">void sub_func(int level)</div><div class="ttdef"><b>Definition:</b> <a href="with__test_8cpp_source.html#l00014">with_test.cpp:14</a></div></div>
-<div class="ttc" id="awith__test_8cpp_html_a711111d9f1b2a22c9ea8699ceef3827a"><div class="ttname"><a href="with__test_8cpp.html#a711111d9f1b2a22c9ea8699ceef3827a">subsub_func</a></div><div class="ttdeci">void subsub_func()</div><div class="ttdef"><b>Definition:</b> <a href="with__test_8cpp_source.html#l00007">with_test.cpp:7</a></div></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="with__test_8cpp.html#a711111d9f1b2a22c9ea8699ceef3827a">    6</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="with__test_8cpp.html#a711111d9f1b2a22c9ea8699ceef3827a">subsub_func</a>()</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;stack_trace\n&quot;</span>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    std::cout &lt;&lt; boost::stacktrace::stacktrace();</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    exit( EXIT_SUCCESS );</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>}</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="stack__backtrace__test_8cpp.html#abceeb850ce6f3780d81970e31b8e76ca">   13</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="with__test_8cpp.html#a120ae90403ba02a22054091f1eb39ede">sub_func</a>( <span class="keywordtype">int</span> level )</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordflow">if</span> ( 0 &lt; level )</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <a class="code hl_function" href="with__test_8cpp.html#a120ae90403ba02a22054091f1eb39ede">sub_func</a>( level - 1 );</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_function" href="with__test_8cpp.html#a711111d9f1b2a22c9ea8699ceef3827a">subsub_func</a>();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
+<div class="ttc" id="awith__test_8cpp_html_a120ae90403ba02a22054091f1eb39ede"><div class="ttname"><a href="with__test_8cpp.html#a120ae90403ba02a22054091f1eb39ede">sub_func</a></div><div class="ttdeci">void sub_func(int level)</div><div class="ttdef"><b>Definition:</b> <a href="with__test_8cpp_source.html#l00013">with_test.cpp:13</a></div></div>
+<div class="ttc" id="awith__test_8cpp_html_a711111d9f1b2a22c9ea8699ceef3827a"><div class="ttname"><a href="with__test_8cpp.html#a711111d9f1b2a22c9ea8699ceef3827a">subsub_func</a></div><div class="ttdeci">void subsub_func()</div><div class="ttdef"><b>Definition:</b> <a href="with__test_8cpp_source.html#l00006">with_test.cpp:6</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_13e138d54eb8818da29c3992edef070a.html">test</a></li><li class="navelem"><a class="el" href="dir_190f18b727bbc2ae9c10382f958007fd.html">stack_backtrace_operation</a></li><li class="navelem"><a class="el" href="with__test_8cpp.html">with_test.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_13e138d54eb8818da29c3992edef070a.html">test</a></li><li class="navelem"><a class="el" href="dir_931e91c3aeb45ccf60a4216f723b7872.html">stack_backtrace</a></li><li class="navelem"><a class="el" href="with__test_8cpp.html">with_test.cpp</a></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>

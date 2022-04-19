@@ -1,5 +1,0 @@
-<map id="dsp_work_utils::fileopen" name="dsp_work_utils::fileopen">
-<area shape="rect" id="node1" title="指定のモードでファイルを開く。正しくファイルを開けたかのチェック機構付き" alt="" coords="243,5,401,32"/>
-<area shape="rect" id="node2" href="$file__operation__test_8cpp.html#a1c8a469db0f833bb9044a0b7c6f774f4" title=" " alt="" coords="104,5,195,32"/>
-<area shape="rect" id="node3" href="$file__operation__test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,56,32"/>
-</map>
